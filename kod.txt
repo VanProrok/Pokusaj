@@ -2,6 +2,7 @@ neki kod
 druga linija 
 treca linija
 umetnuta linija
+kopirana linija
 umetanje jos jednog reda
 cetvrta linija
 peta linija
