@@ -4,3 +4,4 @@ treca linija
 umetnuta linija
 umetanje jos jednog reda
 cetvrta linija
+peta linija
