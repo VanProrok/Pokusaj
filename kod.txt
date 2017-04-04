@@ -2,4 +2,5 @@ neki kod
 druga linija 
 treca linija
 umetnuta linija
+umetanje jos jednog reda
 cetvrta linija
