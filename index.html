@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Adventure Bootstrap Template</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    	.gallery img {
+  height: 370px;
+  margin-right: 5px;
+}
+    </style>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+
+  // Define flickity carousel
+  var $gallery = $('.gallery').flickity({
+    imagesLoaded: true,
+    percentPosition: false,
+    wrapAround: true,
+    pageDots: false
+  });
+
+  var flkty = $gallery.data('flickity');
+
+  $gallery.on('staticClick', function(event, pointer, cellElement, cellIndex) {
+    // Do nothing if cell was not clicked
+    if (!cellElement) {
+      return;
+    }
+    // Find image url and use it to tell Fancybox what to target
+    var $zoomurl = $(cellElement).find('img').attr('src');
+    $.fancybox($zoomurl);
+  });
+
+});
+    </script>
+<!--
+
+Template 2078 Adventure
+
+http://www.tooplate.com/view/2078-adventure
+
+-->
+	<!-- Bootstrap CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Animate CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<!-- Font Icons
+   ================================================== -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/et-line-font.css">
+
+	<!-- Nivo Lightbox CSS
+   ================================================== -->
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+	<!-- Owl Carousel CSS
+   ================================================== -->
+   	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+
+	<!-- BxSlider CSS
+   ================================================== -->
+   	<link rel="stylesheet" href="css/bxslider.css">
+
+   	<!-- Main CSS
+   	================================================== -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Google web font
+   ================================================== -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+<!-- Preloader section
+================================================== -->
+<section  class="preloader">
+
+	<div class="sk-rotating-plane"></div>
+
+</section>
+
+
+<!-- Navigation section
+================================================== -->
+<section class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
+
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#home" class="smoothScroll navbar-brand">ADVENTURE</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+            
+				<!-- <li><a href="#home" class="smoothScroll">HOME</a></li> -->
+                
+				<li><a href="#work" class="smoothScroll">WORK</a></li>
+				<li><a href="#about" class="smoothScroll">ABOUT</a></li>
+				<li><a href="#team" class="smoothScroll">TEAM</a></li>
+				<li><a href="#portfolio" class="smoothScroll">GALLERY</a></li>
+				<li><a href="#plan" class="smoothScroll">PLANS</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+			</ul>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- Homepage section
+================================================== -->
+<div id="home">
+	<div class="site-slider">
+        <ul class="bxslider">
+			<li>
+                <img src="images/slider/slide1.jpg" alt="slider image 1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="slider-caption">
+                                <h2>Plan your trip</h2>
+                                <p class="color-white">Fusce elementum nisi et magna tristique, ut facilisis magna dapibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="images/slider/slide2.jpg" alt="slider image 2">
+                <div class="container caption-wrapper">
+                    <div class="slider-caption">
+                        <h2>Bootstrap Layout</h2>
+                        <p class="color-white">Pellentesque mollis purus ipsum. Fusce tristique ante et est placerat dignissim.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="images/slider/slide3.jpg" alt="slider image 3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="slider-caption">
+                                <h2>Mobile Ready</h2>
+                                <p class="color-white">You may modify any content section as you wish.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="images/slider/slide4.jpg" alt="slider image 4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="slider-caption">
+                                <h2>Responsive Theme</h2>
+                                <p class="color-white">Phasellus ultrices, nunc et tempus porta, tellus purus elementum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="images/slider/slide5.jpg" alt="slider image 5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="slider-caption">
+                                <h2>Download it FREE!</h2>
+                               <p class="color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul> <!-- /.bxslider -->
+        <div class="bx-thumbnail-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="bx-pager">
+                            <a data-slide-index="0" href=""><img src="images/slider/thumb1.jpg" alt="thumbnail 1" /></a>
+                            <a data-slide-index="1" href=""><img src="images/slider/thumb2.jpg" alt="thumbnail 2" /></a>
+                            <a data-slide-index="2" href=""><img src="images/slider/thumb3.jpg" alt="thumbnail 3" /></a>
+                            <a data-slide-index="3" href=""><img src="images/slider/thumb4.jpg" alt="thumbnail 4" /></a>
+                            <a data-slide-index="4" href=""><img src="images/slider/thumb5.jpg" alt="thumbnail 5" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /.site-slider -->
+</div>
+
+
+<!-- Work section
+================================================== -->
+<section id="work" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+				<div class="section-title">
+					<h5 class="wow bounceIn">Adventure Studio</h5>
+					<h1 class="heading">WHAT WE DO</h1>
+					<hr>
+					<p>Click on the adventure logo at the top to scroll up. Nullam a finibus dui. Nullam malesuada vitae odio et fringilla.</p>
+				</div>
+			</div>
+
+
+			<!-- Work Owl Carousel section
+			================================================== -->
+			<div id="owl-work" class="owl-carousel">
+
+				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" id="prviOwl">
+					<i class="icon-tools medium-icon"></i>
+						<h3>SOCIAL MEDIA</h3>
+						<hr>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+
+				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s" id="drugiOwl">
+					<i class="icon-tablet medium-icon"></i>
+						<h3>TRIP PLANNING</h3>
+						<hr>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+
+				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s" id="treciOwl">
+					<i class="icon-bike medium-icon"></i>
+						<h3>WEB MARKETING</h3>
+						<hr>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+
+				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s" id="cetvrtiOwl">
+					<i class="icon-flag medium-icon"></i>
+						<h3>EXPLORING PLACES</h3>
+						<hr>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+
+				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s" id="petiOwl">
+					<i class="icon-basket medium-icon"></i>
+						<h3>RECREATIONS</h3>
+						<hr>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- About section
+================================================== -->
+<section id="about" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+				<div class="section-title">
+					<h5 class="wow bounceIn">ACTIVE PEOPLE</h5>
+					<h1 class="heading color-white">WHO WE ARE</h1>
+					<hr>
+					<p class="color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<h3 class="color-white">OUR STORY</h3>
+				<h2>ADVENTURE STUDIO</h2>
+				<p class="color-white">Adventure is free Bootstrap web template by <a rel="nofollow" href="http://www.tooplate.com" target="_parent">Tooplate</a>. Download, edit, and use this layout for your website. Feel free to modify or remove anything to meet your requirements. Excepteu sunt in culpa qui officia deserunt mollit.</p>
+				<p class="color-white">Excepteu sunt in culpa qui officia deserunt mollit anim id. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<h2 class="mobile-top">WHY CHOOSE US?</h2>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingOne">
+      						<h4 class="panel-title">
+        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          							Very Quick Response
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      						<div class="panel-body">
+        						<p>Phasellus odio lacus, posuere vel sodales a, facilisis vitae ligula. Pellentesque leo ligula, lobortis ut sapien blandit, convallis pulvinar nisi. Proin tempor congue nibh. Nam non maximus metus, nec tincidunt nulla.</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+    				<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingTwo">
+      						<h4 class="panel-title">
+        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          							High Quality Team
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      						<div class="panel-body">
+        						<p>Nullam vehicula tincidunt ultrices. Curabitur id magna velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pretium tortor ultrices ligula dictum placerat. Donec eget augue sapien. Curabitur vel orci magna. Sed id eros consequat nibh congue euismod.</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+ 					 <div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingThree">
+      						<h4 class="panel-title">
+        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          							Special Awards
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      						<div class="panel-body">
+        						<p>Morbi pellentesque nisl at sapien congue facilisis. Proin consequat pharetra hendrerit. Aliquam vulputate, ligula ut pellentesque molestie, dolor nisi semper augue, sit amet porta risus sem non sapien. Cras vel pulvinar sapien, in consequat purus. Aliquam at varius augue.</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+ 				 </div>
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="about-fact border-right">
+					<span>32</span>
+					<h4>TOURS</h4>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="about-fact border-right">
+					<span>16</span>
+					<h4>AWARDS</h4>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="about-fact border-right">
+					<span>128</span>
+					<h4>TRIPS</h4>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="about-fact">
+					<span>24</span>
+					<h4>PLANS</h4>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- team section
+================================================== -->
+<section id="team" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+				<div class="section-title">
+					<h5 class="wow bounceIn">WE ARE READY</h5>
+					<h1 class="heading">OUR TEAM</h1>
+					<hr>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</p>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="team-wrapper">
+					<img src="images/team1.jpg" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>George Chan</h4>
+							<h3>Trip Planner</h3>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.6"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.3s">
+				<div class="team-wrapper">
+					<img src="images/team2.jpg" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Kitty Sandar</h4>
+							<h3>Trip Manager</h3>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.6"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
+				<div class="team-wrapper">
+					<img src="images/team3.jpg" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Johnny Lynn</h4>
+							<h3>Location Explorer</h3>
+							<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.6s"></a></li>
+								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.6"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- Portfolio section
+================================================== -->
+<section id="portfolio" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+				<div class="section-title">
+					<h5 class="wow bounceIn">WE ARE DELIGENT</h5>
+					<h1 class="heading">SHOWCASE</h1>
+					<hr>
+					<p>Pellentesque mollis purus ipsum. Fusce tristique ante et est placerat dignissim. Curabitur tincidunt risus non dui vulputate tincidunt.</p>
+				</div>
+			</div>
+
+            <div class="col-md-4 col-sm-6">
+				<div class="grid">
+              		<figure class="effect-zoe">
+						<img src="images/portfolio-img1.jpg" alt="portfolio img"/>
+							<figcaption>
+								<h2>Mobile App</h2>
+								<p class="icon-links">
+									<a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+								</p>
+							</figcaption>			
+					</figure>
+				</div>
+            </div>   
+
+            <div class="col-md-4 col-sm-6">
+				<div class="grid">
+              		<figure class="effect-zoe">
+						<img src="images/portfolio-img2.jpg" alt="portfolio img"/>
+							<figcaption>
+								<h2>Trip Planning</h2>
+								<p class="icon-links">
+									<a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+								</p>
+							</figcaption>			
+					</figure>
+				</div>
+            </div> 
+
+            <div class="col-md-4 col-sm-6">
+				<div class="grid">
+              		<figure class="effect-zoe">
+						<img src="images/portfolio-img3.jpg" alt="portfolio img"/>
+							<figcaption>
+								<h2>Scheduling</h2>
+								<p class="icon-links">
+									<a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+								</p>
+							</figcaption>			
+					</figure>
+				</div>
+            </div> 
+          	
+          	<div class="col-md-4 col-sm-6">
+				<div class="grid">
+              		<figure class="effect-zoe">
+						<img src="images/portfolio-img4.jpg" alt="portfolio img"/>
+							<figcaption>
+								<h2>Arranging</h2>
+								<p class="icon-links">
+									<a href="images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+								</p>
+							</figcaption>			
+					</figure>
+				</div>
+            </div> 
+
+            <div class="col-md-4 col-sm-6">
+				<div class="grid">
+              		<figure class="effect-zoe">
+						<img src="images/portfolio-img5.jpg" alt="portfolio img"/>
+							<figcaption>
+								<h2>Organizing</h2>
+								<p class="icon-links">
+									<a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+								</p>
+							</figcaption>			
+					</figure>
+				</div>
+            </div> 
+
+            <div class="col-md-4 col-sm-6">
+				<div class="grid">
+              		<figure class="effect-zoe">
+						<img src="images/portfolio-img6.jpg" alt="portfolio img"/>
+							<figcaption>
+								<h2>Grouping</h2>
+								<p class="icon-links">
+									<a href="images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+								</p>
+							</figcaption>			
+					</figure>
+				</div>
+            </div> 
+
+            <!-- Portfolio bottom section
+			================================================== -->
+            <div class="col-md-offset-2 col-md-8 col-sm-12">
+            	<div class="portfolio-bottom">
+            		<h2>INTERESTED?</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Lorem ipsum dolor sit 	amet.</p>
+					<a href="#plan" class="smoothScroll btn btn-default">LET'S GO!</a>
+            	</div>
+            </div>    
+
+		</div>
+	</div>
+</section>		
+
+
+<!-- Plan section
+================================================== -->
+<section id="plan" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
+				<div class="section-title">
+					<h5 class="wow bounceIn">UNIQUE ADVENTURES</h5>
+					<h1 class="heading color-white">TRIP PLANS</h1>
+					<hr>
+					<p class="color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt.</p>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+				<div class="plan">
+					<h2 class="plan-title">Villager</h2>
+					<div class="plan-price">
+						<h1 class="plan-price-title">$500 / <small>trip</small></h1>
+					</div>
+					<ul class="plan-list">
+						<li>4 days 3 nights</li>
+						<li>Explore Forest</li>
+						<li>Visit Waterfalls</li>
+						<li>Group of 10 people</li>
+					</ul>
+					<div class="plan-button">
+						<button class="btn btn-default">CHOOSE PLAN</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+				<div class="plan">
+					<h2 class="plan-title">Tourer</h2>
+					<div class="plan-price">
+						<h1 class="plan-price-title">$800 / <small>trip</small></h1>
+					</div>
+					<ul class="plan-list">
+						<li>8 days 7 nights</li>
+						<li>Explore Mountains</li>
+						<li>Touring Villages</li>
+						<li>Group of 15 people</li>
+					</ul>
+					<div class="plan-button">
+						<button class="btn btn-default">CHOOSE PLAN</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="plan">
+					<h2 class="plan-title">Explorer</h2>
+					<div class="plan-price">
+						<h1 class="plan-price-title">$1,400 / <small>trip</small></h1>
+					</div>
+					<ul class="plan-list">
+						<li>12 days 11 nights</li>
+						<li>Multiple Cities</li>
+						<li>Unique Experiences</li>
+						<li>Group of 20 people</li>
+					</ul>
+					<div class="plan-button">
+						<button class="btn btn-default">CHOOSE PLAN</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- Contact section
+================================================== -->
+<section id="contact" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+				<div class="section-title">
+					<h5 class="wow bounceIn">PLAN YOUR TRIP</h5>
+					<h1 class="heading">CONTACT US</h1>
+					<hr>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla. Excepteu sunt in culpa qui officia deserunt mollit.</p>
+				</div>
+			</div>
+
+			<!-- Contact form section
+			================================================== -->
+			<div class="col-md-offset-1 col-md-10 col-sm-12">
+				<form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.6s">
+					<div class="col-md-4 col-sm-6">
+						<input type="text" class="form-control" placeholder="Name" name="name">
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<input type="email" class="form-control" placeholder="Email" name="email">
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<input type="text" class="form-control" placeholder="Subject" name="subject">
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<textarea class="form-control" placeholder="Message" rows="7" name"message"></textarea>
+					</div>
+					<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+						<input type="submit" class="form-control" value="SHOOT MESSAGE">
+					</div>
+				</form>
+			</div>
+
+			<!-- Contact detail section
+			================================================== -->
+			<div class="contact-detail col-md-12 col-sm-12">
+				<div class="col-md-6 col-sm-6">
+					<h3><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
+					<p>contact@company.com</p>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONES</h3>
+					<p>030-030-0330 | 070-070-7777</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- Footer section
+================================================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+
+				<h2 class="wow bounceIn">ADVENTURE STUDIO</h2>
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="1s"></a></li>
+					<li><a href="#" class="fa fa-github wow fadeIn" data-wow-delay="1.3s"></a></li>
+					<li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="1.6s"></a></li>
+				</ul>
+				<p>Copyright &copy; 2016 Adventure Studio 
+                
+                | Design: <a rel="nofollow" href="http://www.tooplate.com/free-templates" target="_parent">Tooplate</a></p>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- MODAL section
+================================================== -->
+<div class="modal fade" id="kreiranjeKorakaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="">
+    <div class="modal-dialog" role="document" style="min-width: 60%">
+        <div class="modal-content" style="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="nazivPredmeta">Kreiranje koraka</h4>
+            </div>
+            <div class="modal-body" id="kreiranjeKorakaView">
+            <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="gallery">
+        <div class="gallery-cell"><img src="http://i.imgur.com/bwy74ok.jpg" alt="orange tree" /></div>
+        <div class="gallery-cell"><img src="http://i.imgur.com/bAZWoqx.jpg" alt="submerged" /></div>
+        <div class="gallery-cell"><img src="http://i.imgur.com/PgmEBSB.jpg" alt="look-out" /></div>
+        <div class="gallery-cell"><img src="http://i.imgur.com/aboaFoB.jpg" alt="freedom tower" /></div>
+        <div class="gallery-cell"><img src="http://i.imgur.com/LkmcILl.jpg" alt="drizzle" /></div>
+        <div class="gallery-cell"><img src="http://i.imgur.com/q9zO6tw.jpg" alt="cat nose" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="kreiranjeKorakaModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="">
+    <div class="modal-dialog" role="document" style="min-width: 60%">
+        <div class="modal-content" style="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="nazivPredmeta">Kreiranje drugog koraka</h4>
+            </div>
+            <div class="modal-body" id="kreiranjeKorakaView">
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="kreiranjeKorakaModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="">
+    <div class="modal-dialog" role="document" style="min-width: 60%">
+        <div class="modal-content" style="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="nazivPredmeta">Kreiranje treceg koraka</h4>
+            </div>
+            <div class="modal-body" id="kreiranjeKorakaView">
+            <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/css/bootstrap-image-gallery.css">
+<link rel="stylesheet" href="https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/css/demo.css">
+<div class="container">
+    <h1>Bootstrap Image Gallery Demo</h1>
+    <blockquote>
+        <p>Bootstrap Image Gallery is an extension to <a href="http://blueimp.github.io/Gallery/">blueimp Gallery</a>, a touch-enabled, responsive and customizable image & video gallery.
+            <br>It displays images and videos in the modal dialog of the <a href="http://getbootstrap.com/">Bootstrap</a> framework, features swipe, mouse and keyboard navigation, transition effects, fullscreen support and on-demand content loading and can
+            be extended to display additional content types.</p>
+    </blockquote>
+    <form class="form-inline">
+        <div class="form-group">
+            <button id="video-gallery-button" type="button" class="btn btn-success btn-lg">
+                <i class="glyphicon glyphicon-film"></i>
+                Launch Video Gallery
+            </button>
+        </div>
+        <div class="form-group">
+            <button id="image-gallery-button" type="button" class="btn btn-primary btn-lg">
+                <i class="glyphicon glyphicon-picture"></i>
+                Launch Image Gallery
+            </button>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-success btn-lg">
+                <i class="glyphicon glyphicon-leaf"></i>
+                <input id="borderless-checkbox" type="checkbox">Borderless
+            </label>
+            <label class="btn btn-primary btn-lg">
+                <i class="glyphicon glyphicon-fullscreen"></i>
+                <input id="fullscreen-checkbox" type="checkbox">Fullscreen
+            </label>
+        </div>
+    </form>
+    <br>
+    <!-- The container for the list of example images -->
+    <div id="links">
+        <a data-gallery="" title="Natalia" href="http://farm4.static.flickr.com/3741/11188919165_b73f1ddc32_b.jpg">
+            <img src="http://farm4.static.flickr.com/3741/11188919165_b73f1ddc32_s.jpg">
+        </a>
+        <a data-gallery="" title="Delft Touch in the kitchen" href="http://farm4.static.flickr.com/3812/11188050815_5e8cccf0f6_b.jpg">
+            <img src="http://farm4.static.flickr.com/3812/11188050815_5e8cccf0f6_s.jpg">
+        </a>
+        <a data-gallery="" title="Father Figure Project: The Social Construct" href="http://farm4.static.flickr.com/3703/11191153143_04bbbc8301_b.jpg">
+            <img src="http://farm4.static.flickr.com/3703/11191153143_04bbbc8301_s.jpg">
+        </a>
+        <a data-gallery="" title="Higherbeams." href="http://farm4.static.flickr.com/3821/11190956343_09b8022ea2_b.jpg">
+            <img src="http://farm4.static.flickr.com/3821/11190956343_09b8022ea2_s.jpg">
+        </a>
+        <a data-gallery="" title="Contact" href="http://farm8.static.flickr.com/7325/11186917235_003d9df5d6_b.jpg">
+            <img src="http://farm8.static.flickr.com/7325/11186917235_003d9df5d6_s.jpg">
+        </a>
+        <a data-gallery="" title="The Track" href="http://farm6.static.flickr.com/5501/11186913445_c88dd25c59_b.jpg">
+            <img src="http://farm6.static.flickr.com/5501/11186913445_c88dd25c59_s.jpg">
+        </a>
+        <a data-gallery="" title="TheHallsOfAdoration" href="http://farm4.static.flickr.com/3715/11186895035_8596236621_b.jpg">
+            <img src="http://farm4.static.flickr.com/3715/11186895035_8596236621_s.jpg">
+        </a>
+        <a data-gallery="" title="Si me dijeran pide un deseo" href="http://farm8.static.flickr.com/7414/11190086653_e330723a8c_b.jpg">
+            <img src="http://farm8.static.flickr.com/7414/11190086653_e330723a8c_s.jpg">
+        </a>
+        <a data-gallery="" title="untitled" href="http://farm3.static.flickr.com/2891/11188743634_f339e72b79_b.jpg">
+            <img src="http://farm3.static.flickr.com/2891/11188743634_f339e72b79_s.jpg">
+        </a>
+        <a data-gallery="" title="Loch Ba" href="http://farm8.static.flickr.com/7390/11187408694_9dd7188ca8_b.jpg">
+            <img src="http://farm8.static.flickr.com/7390/11187408694_9dd7188ca8_s.jpg">
+        </a>
+        <a data-gallery="" title="Remarkable Rocks 2" href="http://farm3.static.flickr.com/2831/11187401055_1e498bde13_b.jpg">
+            <img src="http://farm3.static.flickr.com/2831/11187401055_1e498bde13_s.jpg">
+        </a>
+        <a data-gallery="" title="The imagination tree" href="http://farm6.static.flickr.com/5530/11188853224_91ebabac12_b.jpg">
+            <img src="http://farm6.static.flickr.com/5530/11188853224_91ebabac12_s.jpg">
+        </a>
+        <a data-gallery="" title="Blue Patricia Lake" href="http://farm4.static.flickr.com/3720/11190734053_7cf9749bdb_b.jpg">
+            <img src="http://farm4.static.flickr.com/3720/11190734053_7cf9749bdb_s.jpg">
+        </a>
+        <a data-gallery="" title="Goblin Brute" href="http://farm4.static.flickr.com/3740/11186937956_d8d8422169_b.jpg">
+            <img src="http://farm4.static.flickr.com/3740/11186937956_d8d8422169_s.jpg">
+        </a>
+        <a data-gallery="" title="." href="http://farm8.static.flickr.com/7421/11191341825_b2bf635f25_b.jpg">
+            <img src="http://farm8.static.flickr.com/7421/11191341825_b2bf635f25_s.jpg">
+        </a>
+        <a data-gallery="" title="be the light 336.365" href="http://farm3.static.flickr.com/2809/11189301843_9f41b02a47_b.jpg">
+            <img src="http://farm3.static.flickr.com/2809/11189301843_9f41b02a47_s.jpg">
+        </a>
+        <a data-gallery="" title="Lofoten Islands" href="http://farm4.static.flickr.com/3788/11193226453_fd9b06008c_b.jpg">
+            <img src="http://farm4.static.flickr.com/3788/11193226453_fd9b06008c_s.jpg">
+        </a>
+        <a data-gallery="" title="もみじ" href="http://farm4.static.flickr.com/3737/11189043544_e992a227d3_b.jpg">
+            <img src="http://farm4.static.flickr.com/3737/11189043544_e992a227d3_s.jpg">
+        </a>
+        <a data-gallery="" title="Nocturna en Albarracín./ Nocturne near Albarracín (Teruel, Spain)." href="http://farm8.static.flickr.com/7455/11187819606_c008b36106_b.jpg">
+            <img src="http://farm8.static.flickr.com/7455/11187819606_c008b36106_s.jpg">
+        </a>
+        <a data-gallery="" title="DIAMOND IN THE ROUGH" href="http://farm8.static.flickr.com/7319/11188792234_dfea30f688_b.jpg">
+            <img src="http://farm8.static.flickr.com/7319/11188792234_dfea30f688_s.jpg">
+        </a>
+        <a data-gallery="" title="Imperfection" href="http://farm3.static.flickr.com/2817/11188666563_091e4bb4b4_b.jpg">
+            <img src="http://farm3.static.flickr.com/2817/11188666563_091e4bb4b4_s.jpg">
+        </a>
+        <a data-gallery="" title="Late Again" href="http://farm6.static.flickr.com/5531/11186088035_98d5c7be84_b.jpg">
+            <img src="http://farm6.static.flickr.com/5531/11186088035_98d5c7be84_s.jpg">
+        </a>
+        <a data-gallery="" title="Canyons" href="http://farm6.static.flickr.com/5502/11189048145_f234c1c4a1_b.jpg">
+            <img src="http://farm6.static.flickr.com/5502/11189048145_f234c1c4a1_s.jpg">
+        </a>
+        <a data-gallery="" title="Brouillard sur Lanaud" href="http://farm6.static.flickr.com/5477/11193030495_dc7d99caff_b.jpg">
+            <img src="http://farm6.static.flickr.com/5477/11193030495_dc7d99caff_s.jpg">
+        </a>
+        <a data-gallery="" title="Incontri di lavoro" href="http://farm8.static.flickr.com/7333/11189762165_7092588e1f_b.jpg">
+            <img src="http://farm8.static.flickr.com/7333/11189762165_7092588e1f_s.jpg">
+        </a>
+        <a data-gallery="" title="Tijdens de wandeling terug van De panne naar Oostduinkerke" href="http://farm6.static.flickr.com/5542/11186573045_89102139d2_b.jpg">
+            <img src="http://farm6.static.flickr.com/5542/11186573045_89102139d2_s.jpg">
+        </a>
+        <a data-gallery="" title="absorbed" href="http://farm4.static.flickr.com/3751/11194208465_ccfb0df6d3_b.jpg">
+            <img src="http://farm4.static.flickr.com/3751/11194208465_ccfb0df6d3_s.jpg">
+        </a>
+        <a data-gallery="" title="Metal,  Steam and Dedication.  North Yorkshire Moors Railway." href="http://farm6.static.flickr.com/5531/11189794436_99c1e0dcfd_b.jpg">
+            <img src="http://farm6.static.flickr.com/5531/11189794436_99c1e0dcfd_s.jpg">
+        </a>
+        <a data-gallery="" title="Tutorial tuesday" href="http://farm4.static.flickr.com/3767/11194056215_786a05dcb9_b.jpg">
+            <img src="http://farm4.static.flickr.com/3767/11194056215_786a05dcb9_s.jpg">
+        </a>
+        <a data-gallery="" title="My Street." href="http://farm8.static.flickr.com/7375/11187509905_0366640771_b.jpg">
+            <img src="http://farm8.static.flickr.com/7375/11187509905_0366640771_s.jpg">
+        </a>
+        <a data-gallery="" title="Histoire comme ça" href="http://farm3.static.flickr.com/2821/11187333644_25ae318b9a_b.jpg">
+            <img src="http://farm3.static.flickr.com/2821/11187333644_25ae318b9a_s.jpg">
+        </a>
+        <a data-gallery="" title="" href="http://farm4.static.flickr.com/3797/11186343795_9e20e0a0d0_b.jpg">
+            <img src="http://farm4.static.flickr.com/3797/11186343795_9e20e0a0d0_s.jpg">
+        </a>
+        <a data-gallery="" title="Alice" href="http://farm6.static.flickr.com/5501/11190429845_6b3bf13263_b.jpg">
+            <img src="http://farm6.static.flickr.com/5501/11190429845_6b3bf13263_s.jpg">
+        </a>
+        <a data-gallery="" title="Irreversible" href="http://farm8.static.flickr.com/7437/11188139865_91b1fbb522_b.jpg">
+            <img src="http://farm8.static.flickr.com/7437/11188139865_91b1fbb522_s.jpg">
+        </a>
+        <a data-gallery="" title="Kurhaus Binz" href="http://farm8.static.flickr.com/7311/11194373534_956b5e79d9_b.jpg">
+            <img src="http://farm8.static.flickr.com/7311/11194373534_956b5e79d9_s.jpg">
+        </a>
+        <a data-gallery="" title="the lure of the easter lily" href="http://farm8.static.flickr.com/7365/11194393934_297a0bb9e2_b.jpg">
+            <img src="http://farm8.static.flickr.com/7365/11194393934_297a0bb9e2_s.jpg">
+        </a>
+        <a data-gallery="" title="What's Inside My Bag" href="http://farm4.static.flickr.com/3780/11189972615_a62b8c7213_b.jpg">
+            <img src="http://farm4.static.flickr.com/3780/11189972615_a62b8c7213_s.jpg">
+        </a>
+        <a data-gallery="" title="photo boillon christophe / photo macro au carré syrphe & fleur de lys / le souvenir du regard d'un insecte n°2" href="http://farm8.static.flickr.com/7385/11191819703_75990b9d9b_b.jpg">
+            <img src="http://farm8.static.flickr.com/7385/11191819703_75990b9d9b_s.jpg">
+        </a>
+        <a data-gallery="" title="Please Don't Jump!" href="http://farm3.static.flickr.com/2859/11195652165_7a406e0d7c_b.jpg">
+            <img src="http://farm3.static.flickr.com/2859/11195652165_7a406e0d7c_s.jpg">
+        </a>
+        <a data-gallery="" title="Pink Orchid.  Orquídea rosa." href="http://farm4.static.flickr.com/3711/11186551613_f3e986c66b_b.jpg">
+            <img src="http://farm4.static.flickr.com/3711/11186551613_f3e986c66b_s.jpg">
+        </a>
+        <a data-gallery="" title="autumn sun rays" href="http://farm6.static.flickr.com/5471/11194154564_088959d971_b.jpg">
+            <img src="http://farm6.static.flickr.com/5471/11194154564_088959d971_s.jpg">
+        </a>
+        <a data-gallery="" title="A Fallen Sky" href="http://farm6.static.flickr.com/5494/11193293955_df6ae68522_b.jpg">
+            <img src="http://farm6.static.flickr.com/5494/11193293955_df6ae68522_s.jpg">
+        </a>
+        <a data-gallery="" title="the drilling has stopped" href="http://farm4.static.flickr.com/3739/11193143803_0d5dd1d935_b.jpg">
+            <img src="http://farm4.static.flickr.com/3739/11193143803_0d5dd1d935_s.jpg">
+        </a>
+        <a data-gallery="" title="Sunset at Cayucos, CA" href="http://farm4.static.flickr.com/3785/11193020376_054ba0c2cb_b.jpg">
+            <img src="http://farm4.static.flickr.com/3785/11193020376_054ba0c2cb_s.jpg">
+        </a>
+        <a data-gallery="" title="IMG_1124" href="http://farm4.static.flickr.com/3690/11191491034_3f1af54e5e_b.jpg">
+            <img src="http://farm4.static.flickr.com/3690/11191491034_3f1af54e5e_s.jpg">
+        </a>
+        <a data-gallery="" title="Eiffel's Shadow Part 2" href="http://farm8.static.flickr.com/7432/11189047666_2ff11060db_b.jpg">
+            <img src="http://farm8.static.flickr.com/7432/11189047666_2ff11060db_s.jpg">
+        </a>
+        <a data-gallery="" title="Old Time Space Pilots!" href="http://farm6.static.flickr.com/5508/11197130006_ac579704c7_b.jpg">
+            <img src="http://farm6.static.flickr.com/5508/11197130006_ac579704c7_s.jpg">
+        </a>
+        <a data-gallery="" title="Sky reflected" href="http://farm4.static.flickr.com/3811/11191218745_ef8cf811c9_b.jpg">
+            <img src="http://farm4.static.flickr.com/3811/11191218745_ef8cf811c9_s.jpg">
+        </a>
+        <a data-gallery="" title="Rain at sea" href="http://farm6.static.flickr.com/5528/11191191844_7de9305ff0_b.jpg">
+            <img src="http://farm6.static.flickr.com/5528/11191191844_7de9305ff0_s.jpg">
+        </a>
+        <a data-gallery="" title="Frostig - Frosty" href="http://farm4.static.flickr.com/3827/11194862425_a1a26fce68_b.jpg">
+            <img src="http://farm4.static.flickr.com/3827/11194862425_a1a26fce68_s.jpg">
+        </a>
+        <a data-gallery="" title="Orange Ladybird" href="http://farm6.static.flickr.com/5527/11186670076_11ee081969_b.jpg">
+            <img src="http://farm6.static.flickr.com/5527/11186670076_11ee081969_s.jpg">
+        </a>
+        <a data-gallery="" title="Pink orchid" href="http://farm6.static.flickr.com/5514/11193598423_981cb3b900_b.jpg">
+            <img src="http://farm6.static.flickr.com/5514/11193598423_981cb3b900_s.jpg">
+        </a>
+        <a data-gallery="" title="225.2013" href="http://farm8.static.flickr.com/7449/11193159913_76ddcd3f02_b.jpg">
+            <img src="http://farm8.static.flickr.com/7449/11193159913_76ddcd3f02_s.jpg">
+        </a>
+        <a data-gallery="" title="DSC_7489" href="http://farm4.static.flickr.com/3834/11187370596_195c175098_b.jpg">
+            <img src="http://farm4.static.flickr.com/3834/11187370596_195c175098_s.jpg">
+        </a>
+        <a data-gallery="" title="G-TCDC 2 A321-231S Thomas Cook Airlines UK(on del) MAN 03DEC13" href="http://farm4.static.flickr.com/3665/11192324763_729bd2eb5a_b.jpg">
+            <img src="http://farm4.static.flickr.com/3665/11192324763_729bd2eb5a_s.jpg">
+        </a>
+        <a data-gallery="" title="cold day..but nice" href="http://farm6.static.flickr.com/5546/11191357813_754fc41bde_b.jpg">
+            <img src="http://farm6.static.flickr.com/5546/11191357813_754fc41bde_s.jpg">
+        </a>
+        <a data-gallery="" title="Grinnell in B & W" href="http://farm8.static.flickr.com/7409/11190351243_5c9d34b844_b.jpg">
+            <img src="http://farm8.static.flickr.com/7409/11190351243_5c9d34b844_s.jpg">
+        </a>
+        <a data-gallery="" title="15th corner of metallic shadows" href="http://farm3.static.flickr.com/2824/11192248094_5239c5bb88_b.jpg">
+            <img src="http://farm3.static.flickr.com/2824/11192248094_5239c5bb88_s.jpg">
+        </a>
+        <a data-gallery="" title="The Receipt, Tesco Supermarket, Thornton Heath" href="http://farm3.static.flickr.com/2832/11190558394_4198ee9487_b.jpg">
+            <img src="http://farm3.static.flickr.com/2832/11190558394_4198ee9487_s.jpg">
+        </a>
+        <a data-gallery="" title="Golmaramara, Manisa" href="http://farm8.static.flickr.com/7378/11190583213_87c55a04b1_b.jpg">
+            <img src="http://farm8.static.flickr.com/7378/11190583213_87c55a04b1_s.jpg">
+        </a>
+        <a data-gallery="" title="IMG_4539 Alstroemeria hibrida( Peruvian lily or lily of the Incas)" href="http://farm3.static.flickr.com/2881/11190387313_07d3e4019e_b.jpg">
+            <img src="http://farm3.static.flickr.com/2881/11190387313_07d3e4019e_s.jpg">
+        </a>
+        <a data-gallery="" title="On the Move" href="http://farm4.static.flickr.com/3710/11190198736_329108ab33_b.jpg">
+            <img src="http://farm4.static.flickr.com/3710/11190198736_329108ab33_s.jpg">
+        </a>
+        <a data-gallery="" title="Twistleton Erratic Mystery Solved" href="http://farm4.static.flickr.com/3736/11188821145_4d7c5cba2d_b.jpg">
+            <img src="http://farm4.static.flickr.com/3736/11188821145_4d7c5cba2d_s.jpg">
+        </a>
+        <a data-gallery="" title="Welcome To Dream Theater" href="http://farm3.static.flickr.com/2888/11194228946_a22ca1273f_b.jpg">
+            <img src="http://farm3.static.flickr.com/2888/11194228946_a22ca1273f_s.jpg">
+        </a>
+        <a data-gallery="" title="Kingfisher 115" href="http://farm4.static.flickr.com/3761/11192804084_fc9c224b92_b.jpg">
+            <img src="http://farm4.static.flickr.com/3761/11192804084_fc9c224b92_s.jpg">
+        </a>
+        <a data-gallery="" title="Oh Christmas Tree, Oh Christmas Tree (A7 + FE 28-70mm)" href="http://farm3.static.flickr.com/2843/11188372516_d2b638c316_b.jpg">
+            <img src="http://farm3.static.flickr.com/2843/11188372516_d2b638c316_s.jpg">
+        </a>
+        <a data-gallery="" title="Réservoir" href="http://farm4.static.flickr.com/3772/11186008524_70203c9862_b.jpg">
+            <img src="http://farm4.static.flickr.com/3772/11186008524_70203c9862_s.jpg">
+        </a>
+        <a data-gallery="" title="Anna's Hummingbird" href="http://farm3.static.flickr.com/2879/11193622663_2596f23ccb_b.jpg">
+            <img src="http://farm3.static.flickr.com/2879/11193622663_2596f23ccb_s.jpg">
+        </a>
+        <a data-gallery="" title="India. Udaipur. Templo de Sas Bahu" href="http://farm4.static.flickr.com/3766/11191115443_ef304dab2d_b.jpg">
+            <img src="http://farm4.static.flickr.com/3766/11191115443_ef304dab2d_s.jpg">
+        </a>
+        <a data-gallery="" title="Afternoon Tea Treat" href="http://farm6.static.flickr.com/5546/11186477995_5e02323a9a_b.jpg">
+            <img src="http://farm6.static.flickr.com/5546/11186477995_5e02323a9a_s.jpg">
+        </a>
+        <a data-gallery="" title="0007559" href="http://farm4.static.flickr.com/3715/11192580616_2534046023_b.jpg">
+            <img src="http://farm4.static.flickr.com/3715/11192580616_2534046023_s.jpg">
+        </a>
+        <a data-gallery="" title="Liège-Guillemins" href="http://farm4.static.flickr.com/3813/11191726844_ef38874aa2_b.jpg">
+            <img src="http://farm4.static.flickr.com/3813/11191726844_ef38874aa2_s.jpg">
+        </a>
+        <a data-gallery="" title="autunno in Langa" href="http://farm8.static.flickr.com/7295/11186551094_fd7f6bb741_b.jpg">
+            <img src="http://farm8.static.flickr.com/7295/11186551094_fd7f6bb741_s.jpg">
+        </a>
+        <a data-gallery="" title="Junco" href="http://farm4.static.flickr.com/3775/11188715846_ccaaa3c859_b.jpg">
+            <img src="http://farm4.static.flickr.com/3775/11188715846_ccaaa3c859_s.jpg">
+        </a>
+        <a data-gallery="" title="illuminati" href="http://farm8.static.flickr.com/7390/11190619986_b01b312535_b.jpg">
+            <img src="http://farm8.static.flickr.com/7390/11190619986_b01b312535_s.jpg">
+        </a>
+        <a data-gallery="" title="Chicago on the prairie" href="http://farm8.static.flickr.com/7444/11192183673_9b5dc14b82_b.jpg">
+            <img src="http://farm8.static.flickr.com/7444/11192183673_9b5dc14b82_s.jpg">
+        </a>
+        <a data-gallery="" title="In the wee small hours" href="http://farm4.static.flickr.com/3690/11188858774_880657dfe5_b.jpg">
+            <img src="http://farm4.static.flickr.com/3690/11188858774_880657dfe5_s.jpg">
+        </a>
+        <a data-gallery="" title="Sunset at Rocca Calascio" href="http://farm4.static.flickr.com/3823/11188037413_12432dbd1b_b.jpg">
+            <img src="http://farm4.static.flickr.com/3823/11188037413_12432dbd1b_s.jpg">
+        </a>
+        <a data-gallery="" title="Autumn Woodland Walk" href="http://farm8.static.flickr.com/7445/11193295285_0e9a33b308_b.jpg">
+            <img src="http://farm8.static.flickr.com/7445/11193295285_0e9a33b308_s.jpg">
+        </a>
+        <a data-gallery="" title="The Scoop" href="http://farm4.static.flickr.com/3704/11189390906_9f6d188f6f_b.jpg">
+            <img src="http://farm4.static.flickr.com/3704/11189390906_9f6d188f6f_s.jpg">
+        </a>
+        <a data-gallery="" title="Night Messenger" href="http://farm3.static.flickr.com/2820/11187385286_22a1684442_b.jpg">
+            <img src="http://farm3.static.flickr.com/2820/11187385286_22a1684442_s.jpg">
+        </a>
+        <a data-gallery="" title="IMG_0986 (1)" href="http://farm6.static.flickr.com/5540/11194162765_82ff5370ba_b.jpg">
+            <img src="http://farm6.static.flickr.com/5540/11194162765_82ff5370ba_s.jpg">
+        </a>
+        <a data-gallery="" title="Opening in the reeds" href="http://farm8.static.flickr.com/7297/11194070595_8fbe773d36_b.jpg">
+            <img src="http://farm8.static.flickr.com/7297/11194070595_8fbe773d36_s.jpg">
+        </a>
+        <a data-gallery="" title="坐看 ~奧入瀨溪流,  雲井之流  of Oirase Keiryu~" href="http://farm4.static.flickr.com/3809/11192250074_96d068f6b6_b.jpg">
+            <img src="http://farm4.static.flickr.com/3809/11192250074_96d068f6b6_s.jpg">
+        </a>
+        <a data-gallery="" title="Blue and Gold" href="http://farm4.static.flickr.com/3724/11191614145_eeae8c7a2a_b.jpg">
+            <img src="http://farm4.static.flickr.com/3724/11191614145_eeae8c7a2a_s.jpg">
+        </a>
+        <a data-gallery="" title="NYC in Silhouette" href="http://farm6.static.flickr.com/5509/11188709506_8b49202344_b.jpg">
+            <img src="http://farm6.static.flickr.com/5509/11188709506_8b49202344_s.jpg">
+        </a>
+        <a data-gallery="" title="I hate love" href="http://farm4.static.flickr.com/3684/11187175694_f1e860e03f_b.jpg">
+            <img src="http://farm4.static.flickr.com/3684/11187175694_f1e860e03f_s.jpg">
+        </a>
+        <a data-gallery="" title="Jambatan Seri Warasan #2" href="http://farm8.static.flickr.com/7392/11192683083_c9bcc29620_b.jpg">
+            <img src="http://farm8.static.flickr.com/7392/11192683083_c9bcc29620_s.jpg">
+        </a>
+        <a data-gallery="" title="Flower lakeside" href="http://farm6.static.flickr.com/5517/11188543255_769549853a_b.jpg">
+            <img src="http://farm6.static.flickr.com/5517/11188543255_769549853a_s.jpg">
+        </a>
+        <a data-gallery="" title="Gobi Desert" href="http://farm4.static.flickr.com/3756/11186900993_40b7e05620_b.jpg">
+            <img src="http://farm4.static.flickr.com/3756/11186900993_40b7e05620_s.jpg">
+        </a>
+        <a data-gallery="" title="The Cradle of Light" href="http://farm8.static.flickr.com/7374/11191272254_b768cca1ab_b.jpg">
+            <img src="http://farm8.static.flickr.com/7374/11191272254_b768cca1ab_s.jpg">
+        </a>
+        <a data-gallery="" title="Matched up 337/365" href="http://farm6.static.flickr.com/5519/11190498386_b0e551fcd3_b.jpg">
+            <img src="http://farm6.static.flickr.com/5519/11190498386_b0e551fcd3_s.jpg">
+        </a>
+        <a data-gallery="" title="IMGP9696-stavrosstam" href="http://farm6.static.flickr.com/5483/11192544226_e76f7000ab_b.jpg">
+            <img src="http://farm6.static.flickr.com/5483/11192544226_e76f7000ab_s.jpg">
+        </a>
+        <a data-gallery="" title="IMG_3117" href="http://farm4.static.flickr.com/3758/11191372883_200105f62f_b.jpg">
+            <img src="http://farm4.static.flickr.com/3758/11191372883_200105f62f_s.jpg">
+        </a>
+        <a data-gallery="" title="A world apart..." href="http://farm3.static.flickr.com/2831/11189347715_9d8f5b400b_b.jpg">
+            <img src="http://farm3.static.flickr.com/2831/11189347715_9d8f5b400b_s.jpg">
+        </a>
+        <a data-gallery="" title="Lights on Cape Cod Bay" href="http://farm6.static.flickr.com/5490/11187042085_cd6483e25c_b.jpg">
+            <img src="http://farm6.static.flickr.com/5490/11187042085_cd6483e25c_s.jpg">
+        </a>
+        <a data-gallery="" title="second spring" href="http://farm4.static.flickr.com/3801/11196375183_f6abd5b25e_b.jpg">
+            <img src="http://farm4.static.flickr.com/3801/11196375183_f6abd5b25e_s.jpg">
+        </a>
+        <a data-gallery="" title="Perfect Landing" href="http://farm6.static.flickr.com/5503/11194858816_e46fc17ecd_b.jpg">
+            <img src="http://farm6.static.flickr.com/5503/11194858816_e46fc17ecd_s.jpg">
+        </a>
+        <a data-gallery="" title="Oh rose thou art sick..." href="http://farm4.static.flickr.com/3806/11189687433_9183bb0d19_b.jpg">
+            <img src="http://farm4.static.flickr.com/3806/11189687433_9183bb0d19_s.jpg">
+        </a>
+        <a data-gallery="" title="" href="http://farm8.static.flickr.com/7448/11188317995_4127b61baa_b.jpg">
+            <img src="http://farm8.static.flickr.com/7448/11188317995_4127b61baa_s.jpg">
+        </a>
+    </div>
+    <br>
+</div>
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">×</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation and button states -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/js/bootstrap-image-gallery.js"></script>
+<script src="https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/js/demo.js"></script>
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="kreiranjeKorakaModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="">
+    <div class="modal-dialog" role="document" style="min-width: 60%">
+        <div class="modal-content" style="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="nazivPredmeta">Kreiranje cetvrtog koraka</h4>
+            </div>
+            <div class="modal-body" id="kreiranjeKorakaView">
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="kreiranjeKorakaModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="">
+    <div class="modal-dialog" role="document" style="min-width: 60%">
+        <div class="modal-content" style="">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="nazivPredmeta">Kreiranje petog koraka</h4>
+            </div>
+            <div class="modal-body" id="kreiranjeKorakaView">
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Javascript 
+================================================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/jquery.easing-1.3.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
